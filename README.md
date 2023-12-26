@@ -28,17 +28,18 @@ SmartAgro is a commitment to ushering in a new era of precision agriculture and 
 
 ## Literature Review
 
-The agricultural industry's pivotal role in economic growth, employing over half of India's population and contributing significantly to global GDP, underscores the need for innovative solutions to enhance productivity and profitability [1]. The integration of technology into agriculture has become crucial, focusing on providing farmers with timely and accurate data based on soil type and climatic parameters [1].
+The agricultural industry's pivotal role in economic growth, employing over half of India's population and contributing significantly to global GDP, underscores the need for innovative solutions to enhance productivity and profitability. The integration of technology into agriculture has become crucial, focusing on providing farmers with timely and accurate data based on soil type and climatic parameters.
 
-To refine data categorization, fuzzy logic, in conjunction with rough sets, is employed to handle numerical feature boundary values, enhancing prediction accuracy by considering soil micro and macro-nutrients [2]. Key factors influencing crop yield, such as identifying crop illnesses, suggesting suitable crops for specific lands, and recommending appropriate fertilizers, are addressed using advanced technologies [3].
+To refine data categorization, fuzzy logic, in conjunction with rough sets, is employed to handle numerical feature boundary values, enhancing prediction accuracy by considering soil micro and macro-nutrients. Key factors influencing crop yield, such as identifying crop illnesses, suggesting suitable crops for specific lands, and recommending appropriate fertilizers, are addressed using advanced technologies.
 
-The study utilizes the Extensive Gradient Boosting (XGBoost) model for crop prediction, Random Forest for fertilizer recommendation, and MobileNet for disease detection based on local soil nutrients, including N, P, K, and pH values, and rainfall [3]. The XGBoost algorithm achieves a 99% accuracy for crop prediction, Random Forest attains 95.7% for fertilizer recommendation, and MobileNet achieves 92% accuracy for disease detection [3].
+The study utilizes the Extensive Gradient Boosting (XGBoost) model for crop prediction, Random Forest for fertilizer recommendation, and MobileNet for disease detection based on local soil nutrients, including N, P, K, and pH values, and rainfall . The XGBoost algorithm achieves a 99% accuracy for crop prediction, Random Forest attains 95.7% for fertilizer recommendation, and MobileNet achieves 92% accuracy for disease detection.
 
-Remote sensing techniques, including Radio Detection and Ranging (RADAR) and Light Detection and Ranging (LiDAR), are explored for their potential to predict crop yield. Various parameters derived from multi-sensor data are employed to evaluate biophysical and biochemical characteristics related to crops [4]. Synthetic datasets from biophysical crop models, such as OilcropSun and Ceres-Wheat from the Decision-Support System for Agro-technology Transfer (DSSAT), are used to assess predictive algorithms' impact on performance [5].
+Remote sensing techniques, including Radio Detection and Ranging (RADAR) and Light Detection and Ranging (LiDAR), are explored for their potential to predict crop yield. Various parameters derived from multi-sensor data are employed to evaluate biophysical and biochemical characteristics related to crops. Synthetic datasets from biophysical crop models, such as OilcropSun and Ceres-Wheat from the Decision-Support System for Agro-technology Transfer (DSSAT), are used to assess predictive algorithms' impact on performance.
 
-The Multimodal Machine Learning Based Crop Recommendation and Yield Prediction (MMML-CRYP) approach focuses on effective crop recommendation using equilibrium optimizer (EO) with kernel extreme learning machine (KELM) and accurate crop production prediction using the random forest (RF) technique. The MMML-CRYP technique outperforms other approaches with a maximum accuracy of 97.91% [1].
+The Multimodal Machine Learning Based Crop Recommendation and Yield Prediction (MMML-CRYP) approach focuses on effective crop recommendation using equilibrium optimizer (EO) with kernel extreme learning machine (KELM) and accurate crop production prediction using the random forest (RF) technique. The MMML-CRYP technique outperforms other approaches with a maximum accuracy of 97.91%.
 
 In summary, the reviewed literature underscores the significance of machine learning algorithms, remote sensing techniques, and computational intelligence in predicting crop yield and optimizing nutrient recommendations. However, limitations of lab-based tests and a lack of research on soil nutrient enhancement and crop suitability in specific regions pose challenges for farmers. Addressing these gaps is essential to empower farmers with valuable insights for sustainable agricultural practices and enhanced productivity.
+
 
 ## Brief Methodology of the project
 
@@ -60,7 +61,7 @@ The application allows users to select a specific crop from a dropdown menu.
 The selected crop information is sent to an Amazon Web Services (AWS) server for processing.
 AWS processes the data and returns additional NPK requirements for the selected crop to the mobile application.
 
-## Fallback Mechanism:
+### Fallback Mechanism:
 If the crop name is not specified, the server predicts the crop and provides probabilities, enhancing user flexibility.
 
 ### Connectivity and Efficiency:
