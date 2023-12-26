@@ -77,4 +77,4 @@ The system is designed to enhance agricultural productivity and sustainability b
 The CCNRS consists of multiple hardware components which are connected to each other. During the design of CCNRS as shown in figure 3.1 , all the specifications of individual parts are taken into consideration to see whether the requirements are fulfilled and the objectives are achieved. Since the components are connected to each other, they must also be verified if they are compatible with each other. The interfacing type should be the same and voltage and current levels must be below the threshold.
 
 ### Soil NPK sensor
-![NPK ](Images/Agree.png)
+![NPK](Images/npk.png)
