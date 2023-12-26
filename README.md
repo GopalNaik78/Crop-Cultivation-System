@@ -68,3 +68,12 @@ If the crop name is not specified, the server predicts the crop and provides pro
 ### Connectivity and Efficiency:
 The proposed design ensures seamless connectivity between sensors, microcontroller, cloud databases, and the mobile application.
 This integrated approach offers a robust and efficient solution to support sustainable and productive farming practices.
+
+## DESIGN AND ARCHITECTURE OF THE DEVICE
+The system is designed to enhance agricultural productivity and sustainability by providing accurate crop suitability predictions and precise nutrient recommendations based on sensor data. A user-friendly mobile application is developed which allows farmers to interact with the system, select crops, and receive real-time nutrient recommendations. The portable device is built in order to ease the process of soil testing. The current chapter will delve into the discussion of the envisioned intricate design structure of the Crop Cultivation and Nutrient Recommendation System (CCNRS).
+
+## Specifications for the Design
+The CCNRS consists of multiple hardware components which are connected to each other. During the design of CCNRS as shown in figure 3.1 , all the specifications of individual parts are taken into consideration to see whether the requirements are fulfilled and the objectives are achieved. Since the components are connected to each other, they must also be verified if they are compatible with each other. The interfacing type should be the same and voltage and current levels must be below the threshold.
+
+### Soil NPK sensor
+
