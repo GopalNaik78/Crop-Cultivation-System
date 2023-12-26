@@ -73,8 +73,37 @@ This integrated approach offers a robust and efficient solution to support susta
 The system is designed to enhance agricultural productivity and sustainability by providing accurate crop suitability predictions and precise nutrient recommendations based on sensor data. A user-friendly mobile application is developed which allows farmers to interact with the system, select crops, and receive real-time nutrient recommendations. The portable device is built in order to ease the process of soil testing. The current chapter will delve into the discussion of the envisioned intricate design structure of the Crop Cultivation and Nutrient Recommendation System (CCNRS).
 
 ## Specifications for the Design
-![Brief Methodology](Images/Agree.png)
+![Brief Methodology](Images/Agree.jpeg)
 The CCNRS consists of multiple hardware components which are connected to each other. During the design of CCNRS as shown in figure 3.1 , all the specifications of individual parts are taken into consideration to see whether the requirements are fulfilled and the objectives are achieved. Since the components are connected to each other, they must also be verified if they are compatible with each other. The interfacing type should be the same and voltage and current levels must be below the threshold.
 
 ### Soil NPK sensor
 ![NPK](Images/npk.png)
+The Soil NPK Sensor is utilized to fetch the Nitrogen (N), Phosphorus (P), and Potassium (K) values from the soil. It provides an output signal in RS485 format. The measurement range spans from 0 to 1999 mg/kg.
+
+### ESP32 Wi-Fi and Bluetooth MCU
+![ESP#@](Images/esp32.png)
+It is a series of low-cost, low-power systems on a-chip microcontroller with integrated Wi-Fi and dual-mode Bluetooth. The sensor data is sent to the Firebase database using ESP32. The GPS module is also attached to the controller for to provide the location details.
+
+### NEO-6M GPS Chip
+![ESP#@](Images/GPS.png)
+The NEO-6M GPS Chip is employed to determine the precise location of the test sample collected. Subsequently, this location information is utilized to display the position on the map within mobile application.
+
+### MAX485 TTL To RS485
+![ESP#@](Images/converter.png)
+This module facilitates the conversion of the TTL interface from the microcontroller to the RS485 module. The NPK Sensor’s data is in RS485 format.
+
+### Li-poly RC Battery
+![ESP#@](Images/battery.png)
+The Li-poly RC Battery serves as the power source for the entire system, including the controller board.
+
+## Pre analysis work for the design or Models used
+- Requirement Gathering: 
+    Identify and gather the specific requirements of the project, including the functionalities of the real-time crop prediction and nutrient recommendation system, the data needed from NPK sensors, and the desired output for farmers.
+- Data Collection: 
+    Determine the types of data required for the ML model, such as historical crop yield data, soil data, and NPK sensor data. Explore available datasets and sources for data collection.
+- ML Model Selection: 
+    Evaluate different ML algorithms suitable for crop prediction and nutrient recommendation tasks, considering factors like accuracy, computational complexity, and interoperability.
+- Design of Mobile Application: 
+    Plan the user interface and functionalities of the mobile application for farmers to interact with the system, including crop selection, sensor data visualization, and nutrient recommendations.
+- Battery Specifications: 
+    The battery to be used in CCNRS should continuously provide power supply to the sensors, controller. The NPK sensor output needs to be converted to less than 5V to be compatible with the ESP32.
