@@ -42,6 +42,7 @@ In summary, the reviewed literature underscores the significance of machine lear
 
 
 ## Brief Methodology of the project
+![Figure 1.1: Project Architecture Overview](path/to/your/image.png)
 
 ### Sensor Integration:
 The user inserts the Nitrogen-Phosphorus-Potassium (NPK) sensor into the soil.
