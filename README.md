@@ -187,3 +187,4 @@ Hardware components like NPK sensors and ESP32 microcontrollers efficiently coll
 The CCNRS offers tangible benefits, including increased crop yield, reduced resource wastage, and enhanced sustainability. Precision farming techniques, guided by real-time data, allow farmers to optimize inputs, leading to cost savings and environmental conservation. Timely crop recommendations enable adaptive cultivation practices, mitigating risks and maximizing agricultural productivity. In essence, the project paves the way for a more efficient and resilient farming ecosystem, showcasing the potential of technology in advancing smart agriculture.
 
 ## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
