@@ -5,13 +5,17 @@ SmartAgro is an innovative project that addresses the challenges faced by farmer
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Features](#features)
-- [Hardware Requirements](#hardware-requirements)
-- [Software Requirements](#software-requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Contributing](#contributing)
+- [Literature Review](#literature-review)
+- [Brief Methodology](#brief-methodology)
+- [DESIGN AND ARCHITECTURE OF THE DEVICE](#design-and-architecture-of-the-device)
+- [Specifications for the Design](#specifications-for-the-design)
+- [Pre-analysis work](#pre-analysis-work)
+- [IMPLEMENTATION](#implementation)
+  - [Firebase](#firebase)
+  - [AWS EC2](#aws-ec2)
+  - [MIT App Inventor](#mit-app-inventor)
+- [Integrated System Overview](#integrated-system-overview)
+- [Conclusion](#conclusion)
 - [License](#license)
 
 ## Introduction
@@ -41,7 +45,7 @@ The Multimodal Machine Learning Based Crop Recommendation and Yield Prediction (
 In summary, the reviewed literature underscores the significance of machine learning algorithms, remote sensing techniques, and computational intelligence in predicting crop yield and optimizing nutrient recommendations. However, limitations of lab-based tests and a lack of research on soil nutrient enhancement and crop suitability in specific regions pose challenges for farmers. Addressing these gaps is essential to empower farmers with valuable insights for sustainable agricultural practices and enhanced productivity.
 
 
-## Brief Methodology of the project
+## Brief Methodology
 ![Brief Methodology](Images/brief.png)
 
 ### Sensor Integration:
@@ -101,7 +105,7 @@ This module facilitates the conversion of the TTL interface from the microcontro
 
 The Li-poly RC Battery serves as the power source for the entire system, including the controller board.
 
-## Pre analysis work for the design or Models used
+## Pre-analysis work 
 - Requirement Gathering: 
     Identify and gather the specific requirements of the project, including the functionalities of the real-time crop prediction and nutrient recommendation system, the data needed from NPK sensors, and the desired output for farmers.
 - Data Collection: 
@@ -113,7 +117,7 @@ The Li-poly RC Battery serves as the power source for the entire system, includi
 - Battery Specifications: 
     The battery to be used in CCNRS should continuously provide power supply to the sensors, controller. The NPK sensor output needs to be converted to less than 5V to be compatible with the ESP32.
 
-## IMPLEMENTATION OF REAL-TIME CROP CULTIVATION AND NUTRIENT RECOMMENDATION SYSTEM
+## IMPLEMENTATION 
 
 Focuses on the integration and utilization of hardware and software components in the real-time CCNRS. It combines NPK sensors and ESP32 microcontroller to collect and transmit soil nutrient data, while the NEO-6M GPS chip captures geographical locations. The cloud database, Firebase, securely stores real-time sensor data, and the AWS Elastic Compute Cloud (AWS EC2) server deploys the ML model for crop prediction. The mobile application ’E-Dharani’ created using MIT App Inventor, provides farmers with intuitive access to soil health data, crop predictions, and nutrient recommendations. The seamless collaboration of these elements empowers farmers to make data-driven decisions, optimize resources, and embrace sustainable farming practices.
 
